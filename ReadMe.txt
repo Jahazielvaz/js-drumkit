@@ -8,5 +8,6 @@ USEFUL CODE TO EXPLORE
 -data-attribute: This allows you to make up your own attribute, that you can use as long as you include the data-.
 -dynamically adding classes to an element.
 -Transform scale
+-<kbd> tag. This is used for user keyboard input. It sounds like it could be a really cool tag to explore.
 
 RESOURCES

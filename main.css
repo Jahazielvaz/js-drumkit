@@ -4,3 +4,9 @@
   margin: 0;
   list-style: none;
 }
+
+
+/* KEYS */
+.key{
+  border: 2px solid black;
+}
