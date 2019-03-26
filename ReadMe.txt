@@ -1,7 +1,7 @@
 REQUIREMENTS
 -Have some kind of rockstar background.
 -Have 9 keys
--Have the keys make a different drum sound as the user hovers (It's supposed to be when the user clicks, but I think hover will be more useful)
+-Have the keys make a different drum sound when the user presses the specified key
 -Have the keys animate, and get bigger, as well as getting a temporary border
 
 USEFUL CODE TO EXPLORE
@@ -11,3 +11,8 @@ USEFUL CODE TO EXPLORE
 -<kbd> tag. This is used for user keyboard input. It sounds like it could be a really cool tag to explore.
 
 RESOURCES
+keycode.info - For getting the key sounds
+
+
+USEFUL THINGS I'VE LEARNED
+-I had forgotten how to prevent my background image from shrinking when using image size cover. And I was once again reminded to use fixed at the end of background.

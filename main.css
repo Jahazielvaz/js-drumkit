@@ -5,8 +5,67 @@
   list-style: none;
 }
 
+body{
+  background: url("./media-files/images/linkin-park.png")no-repeat top center fixed;
+  background-size: cover;
+}
+
+/* KEYS CONTAINER */
+#keys-container{
+  margin: auto;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
 
 /* KEYS */
 .key{
-  border: 2px solid black;
+  border: 5px solid black;
+  display: inline-block;
+  margin: 20px;
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+
+
+
+}
+
+.inner-key-container{
+  opacity: .7;
+  background: black;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+kbd{
+  font-size: 30px;
+  display: block;
+  color: white;
+  opacity: 1;
+}
+
+span{
+  font-weight: bold;
+  color: orange;
+}
+
+@media(max-width: 710px){
+  #keys-container{
+    position: relative;
+    top: 100px;
+  }
+
+}
+
+@media(max-width: 441px){
+  #keys-container{
+    position: relative;
+    top: 20px;
+  }
+
 }
