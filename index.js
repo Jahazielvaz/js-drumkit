@@ -1,5 +1,12 @@
 let inputs = document.getElementsByTagName("kbd");
 
+let soundsArray = ["drum"];
+
+let audio = new Audio('./media-files/sounds/guitar-long-effect.wav');
+let mySound = () => {
+  return audio.play()
+}
+
 document.addEventListener('keydown', (event) => {
   switch(event.keyCode){
     case 65:

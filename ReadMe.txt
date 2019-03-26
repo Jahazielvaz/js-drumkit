@@ -19,11 +19,17 @@ USEFUL THINGS I'VE LEARNED
 
 -I had completely forgotten that addEventListener() or rather that event listeners existed. I had also forgotten that in order for me to take in key inputs, you need to use keyCodes combined with the event listener.
 
--I also managed to 
+-I also managed to to use the switch case, instead of if else statements. It took me a while to figure out how to do it, but I found out that in the switch parameter section, you use the target piece of data, and the case is the part that you compare it to. Basically the case tells it, when switch equals this case, then do this (The do this, is the part that happens after the case takes place.)
 
 LOGIC BRAINSTORMING
--First find out how kbd works
--Then find out how to extract the sounds from the website resource you got on this project.
+-First find out how kbd works - It's purely semantic. Doesn't have any functionality whatsoever - DONE
+
+-Then find out how to target the keys and tie them to an event - DONE
+
+-Then find out how to extract the sounds from the website resource you got on this project - It turns out, this website didn't give me the sounds so now, I have to find a website that does, and learn how to extract them.
+
 -Then find out how to create a css class on the fly.
+
 -Then use transitions and css animations to make the buttons do what you want.
+
 -Finally test out your project to make sure it's bug free.
