@@ -21,6 +21,19 @@ USEFUL THINGS I'VE LEARNED
 
 -I also managed to to use the switch case, instead of if else statements. It took me a while to figure out how to do it, but I found out that in the switch parameter section, you use the target piece of data, and the case is the part that you compare it to. Basically the case tells it, when switch equals this case, then do this (The do this, is the part that happens after the case takes place.)
 
+THINGS TO RESEARCH
+- element.addClass = "class-name";
+- element.classList.add("class-name");
+- element.classList.remove("class-name");
+- element.toggle.toggle("class-name");
+- Transition end event
+
+THINGS TO PRACTICE
+- setTimout() Get really good with this.
+- addEventListener() Need to master this. Get good with all the different events, and how to use them. 
+
+- data-key (The -key is most likely any name you desire to give it.) html
+
 LOGIC BRAINSTORMING
 -First find out how kbd works - It's purely semantic. Doesn't have any functionality whatsoever - DONE
 

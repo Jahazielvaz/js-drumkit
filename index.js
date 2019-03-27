@@ -26,7 +26,7 @@ let keyElement = document.getElementsByClassName("key");
 
 document.addEventListener('keydown', (event) => {
   let classSelect = (select) => {
-    keyElement.addClass = "playing";
+    keyElement.classList
   }
 
 
