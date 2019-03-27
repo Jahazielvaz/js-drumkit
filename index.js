@@ -17,13 +17,23 @@ let {drum1, drum2, drumSnare, drumStick, guitarStrum, guitarSqueak, guitarShortR
 
 let mySound = (sound) => {
   let audio = new Audio(sound);
+  audio.currentTime = 0;
   return audio.play()
+
 }
 
+let keyElement = document.getElementsByClassName("key");
+
 document.addEventListener('keydown', (event) => {
+  let classSelect = (select) => {
+    keyElement.addClass = "playing";
+  }
+
+
   switch(event.keyCode){
+
     case 65:
-    return mySound(drum1);
+    mySound(drum1);
     break;
 
     case 83:
@@ -61,4 +71,8 @@ document.addEventListener('keydown', (event) => {
 
 
   }
+})
+
+document.addEventListener("keyup", (event) => {
+  return keyElement.className = "key";
 })
