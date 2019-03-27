@@ -1,48 +1,61 @@
 let inputs = document.getElementsByTagName("kbd");
 
-let soundsArray = ["drum"];
+let mySounds = {
+  drum1 : "./media-files/sounds/drum1.wav",
+  drum2 : "./media-files/sounds/drum2.wav",
+  drumSnare : "./media-files/sounds/drum-snare.wav",
+  drumStick : "./media-files/sounds/drumstick.wav",
+  guitarStrum : "./media-files/sounds/guitar-strum.wav",
+  guitarSqueak : "./media-files/sounds/guitar-squeak.wav",
+  guitarShortRiff : "./media-files/sounds/guitar-short-riff.mp3",
+  guitarLongRiff : "./media-files/sounds/guitar-long-riff.wav",
+  guitarLongEffect : "./media-files/sounds/guitar-long-effect.wav"
+}
 
-let audio = new Audio('./media-files/sounds/guitar-long-effect.wav');
-let mySound = () => {
+let {drum1, drum2, drumSnare, drumStick, guitarStrum, guitarSqueak, guitarShortRiff, guitarLongRiff, guitarLongEffect} = mySounds;
+
+
+let mySound = (sound) => {
+  let audio = new Audio(sound);
   return audio.play()
 }
 
 document.addEventListener('keydown', (event) => {
   switch(event.keyCode){
     case 65:
-    alert("A has been pressed");
+    return mySound(drum1);
     break;
 
     case 83:
-    alert("S has been pressed");
+    return mySound(drum2);
     break;
 
     case 68:
-    alert("D has been pressed");
+    return mySound(drumSnare);
     break;
 
     case 70:
-    alert("F has been pressed");
+    return mySound(drumStick);
     break;
 
     case 71:
-    alert("G has been pressed");
+    return mySound(guitarStrum);
     break;
 
     case 72:
-    alert("H has been pressed");
+    return mySound(guitarSqueak);
     break;
 
     case 74:
-    alert("J has been pressed");
+    return mySound(guitarShortRiff);
     break;
 
     case 75:
-    alert("K has been pressed");
+    return mySound(guitarLongRiff);
     break;
 
     case 76:
-    alert("L has been pressed");
+    return mySound(guitarLongEffect);
     break;
 
 
