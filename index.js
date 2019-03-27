@@ -26,13 +26,13 @@ let keyElement = document.getElementsByClassName("key");
 
 document.addEventListener('keydown', (event) => {
   let classSelect = (select) => {
-    keyElement.classList
+    keyElement[select].classList.add("playing");
   }
 
 
   switch(event.keyCode){
-
     case 65:
+    classSelect(0);
     mySound(drum1);
     break;
 
@@ -73,6 +73,8 @@ document.addEventListener('keydown', (event) => {
   }
 })
 
-document.addEventListener("keyup", (event) => {
-  return keyElement.className = "key";
-})
+let removerTransition = (e) => {
+  console.log(e)
+}
+
+keyElement.forEach(console.log("This key works"))

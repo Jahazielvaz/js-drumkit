@@ -27,10 +27,11 @@ THINGS TO RESEARCH
 - element.classList.remove("class-name");
 - element.toggle.toggle("class-name");
 - Transition end event
+- .forEach
 
 THINGS TO PRACTICE
 - setTimout() Get really good with this.
-- addEventListener() Need to master this. Get good with all the different events, and how to use them. 
+- addEventListener() Need to master this. Get good with all the different events, and how to use them.
 
 - data-key (The -key is most likely any name you desire to give it.) html
 
