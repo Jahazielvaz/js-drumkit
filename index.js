@@ -73,11 +73,12 @@ document.addEventListener('keydown', (event) => {
   }
 })
 
-let removeTransition = (event) => {
-  console.log(event)
+let removeTransition = (e) => {
+  if(e.propertyName !== "transform") return;
+  this.classList.remove("playing");
 }
 
-keyElement.forEach(key => key.addEventListener("transitioned", removeTransition);
+keyElement.forEach(key => key.addEventListener("transitionend", removeTransition));
 
 
 
