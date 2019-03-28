@@ -37,34 +37,42 @@ document.addEventListener('keydown', (event) => {
     break;
 
     case 83:
+    classSelect(1);
     return mySound(drum2);
     break;
 
     case 68:
+    classSelect(2);
     return mySound(drumSnare);
     break;
 
     case 70:
+    classSelect(3);
     return mySound(drumStick);
     break;
 
     case 71:
+    classSelect(4);
     return mySound(guitarStrum);
     break;
 
     case 72:
+    classSelect(5);
     return mySound(guitarSqueak);
     break;
 
     case 74:
+    classSelect(6);
     return mySound(guitarShortRiff);
     break;
 
     case 75:
+    classSelect(7);
     return mySound(guitarLongRiff);
     break;
 
     case 76:
+    classSelect(8);
     return mySound(guitarLongEffect);
     break;
 
@@ -73,9 +81,9 @@ document.addEventListener('keydown', (event) => {
   }
 })
 
-let removeTransition = (e) => {
+function removeTransition(e) {
   if(e.propertyName !== "transform") return;
-  this.classList.remove("playing");
+  this.classList.remove("playing")
 }
 
 keyElement.forEach(key => key.addEventListener("transitionend", removeTransition));

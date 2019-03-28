@@ -16,11 +16,14 @@ keycode.info - For figuring out the key codes.
 
 USEFUL THINGS I'VE LEARNED
 -I had forgotten how to prevent my background image from shrinking when using image size cover. And I was once again reminded to use fixed at the end of background.
+
 -For each works on querySelectorAll but for some reason it doesn't work on getElementsByClassName.
 
 -I had completely forgotten that addEventListener() or rather that event listeners existed. I had also forgotten that in order for me to take in key inputs, you need to use keyCodes combined with the event listener.
 
 -I also managed to to use the switch case, instead of if else statements. It took me a while to figure out how to do it, but I found out that in the switch parameter section, you use the target piece of data, and the case is the part that you compare it to. Basically the case tells it, when switch equals this case, then do this (The do this, is the part that happens after the case takes place.)
+
+-I learned that the this keyword only targets es5 functions when when they're being called. For some reason it doesn't target es6 functions if those are the ones being called. I had heard something about this, but I'm not too sure how it works. Need to learn this deeper.
 
 THINGS TO RESEARCH
 - element.addClass = "class-name";
