@@ -22,7 +22,7 @@ let mySound = (sound) => {
 
 }
 
-let keyElement = document.getElementsByClassName("key");
+let keyElement = document.querySelectorAll(".key");
 
 document.addEventListener('keydown', (event) => {
   let classSelect = (select) => {
@@ -73,8 +73,22 @@ document.addEventListener('keydown', (event) => {
   }
 })
 
-let removerTransition = (e) => {
-  console.log(e)
+let removeTransition = (event) => {
+  console.log(event)
 }
 
-keyElement.forEach(console.log("This key works"))
+keyElement.forEach(key => key.addEventListener("transitioned", removeTransition);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PAGE END

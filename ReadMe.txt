@@ -16,6 +16,7 @@ keycode.info - For figuring out the key codes.
 
 USEFUL THINGS I'VE LEARNED
 -I had forgotten how to prevent my background image from shrinking when using image size cover. And I was once again reminded to use fixed at the end of background.
+-For each works on querySelectorAll but for some reason it doesn't work on getElementsByClassName.
 
 -I had completely forgotten that addEventListener() or rather that event listeners existed. I had also forgotten that in order for me to take in key inputs, you need to use keyCodes combined with the event listener.
 
