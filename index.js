@@ -1,18 +1,19 @@
 let inputs = document.getElementsByTagName("kbd");
 
 let mySounds = {
-  drum1 : "./media-files/sounds/drum1.wav",
-  drum2 : "./media-files/sounds/drum2.wav",
+  drumBass : "./media-files/sounds/drum-bass.wav",
+  drumCymbal : "./media-files/sounds/drum-cymbal.wav",
   drumSnare : "./media-files/sounds/drum-snare.wav",
   drumStick : "./media-files/sounds/drumstick.wav",
-  guitarStrum : "./media-files/sounds/guitar-strum.wav",
-  guitarSqueak : "./media-files/sounds/guitar-squeak.wav",
-  guitarShortRiff : "./media-files/sounds/guitar-short-riff.mp3",
-  guitarLongRiff : "./media-files/sounds/guitar-long-riff.wav",
-  guitarLongEffect : "./media-files/sounds/guitar-long-effect.wav"
+  guitarGChord : "./media-files/sounds/guitar-gchord.wav",
+  guitarCChord : "./media-files/sounds/guitar-cchord.wav",
+  guitarDChord : "./media-files/sounds/guitar-dchord.wav",
+  beatboxCh : "./media-files/sounds/beatbox-ch.wav",
+  beatboxPop : "./media-files/sounds/beatbox-pop.wav"
 }
 
-let {drum1, drum2, drumSnare, drumStick, guitarStrum, guitarSqueak, guitarShortRiff, guitarLongRiff, guitarLongEffect} = mySounds;
+let {drumBass, drumCymbal, drumSnare, drumStick, guitarGChord
+  , guitarCChord, guitarDChord, beatboxCh, beatboxPop} = mySounds;
 
 
 let mySound = (sound) => {
@@ -33,12 +34,12 @@ document.addEventListener('keydown', (event) => {
   switch(event.keyCode){
     case 65:
     classSelect(0);
-    mySound(drum1);
+    mySound(drumBass);
     break;
 
     case 83:
     classSelect(1);
-    return mySound(drum2);
+    return mySound(drumCymbal);
     break;
 
     case 68:
@@ -53,27 +54,27 @@ document.addEventListener('keydown', (event) => {
 
     case 71:
     classSelect(4);
-    return mySound(guitarStrum);
+    return mySound(guitarGChord);
     break;
 
     case 72:
     classSelect(5);
-    return mySound(guitarSqueak);
+    return mySound(guitarCChord);
     break;
 
     case 74:
     classSelect(6);
-    return mySound(guitarShortRiff);
+    return mySound(guitarDChord);
     break;
 
     case 75:
     classSelect(7);
-    return mySound(guitarLongRiff);
+    return mySound(beatboxCh);
     break;
 
     case 76:
     classSelect(8);
-    return mySound(guitarLongEffect);
+    return mySound(beatboxPop);
     break;
 
 
